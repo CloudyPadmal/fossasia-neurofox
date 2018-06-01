@@ -37,7 +37,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 8
+Sheet 1 10
 Title "FOSSASIA - NeuroFox"
 Date "2018-05-31"
 Rev "1"
@@ -305,4 +305,88 @@ Wire Wire Line
 	5450 1890 4960 1890
 Wire Wire Line
 	4960 1985 5450 1985
+$Sheet
+S 8000 1385 760  530 
+U 5B117C68
+F0 "Amplifier Block 1" 39
+F1 "Amplifier.sch" 39
+F2 "IN-" I L 8000 1860 39 
+F3 "IN+" I L 8000 1760 39 
+F4 "V+" I L 8000 1655 39 
+F5 "V-" I L 8000 1550 39 
+F6 "GND" I L 8000 1445 39 
+F7 "OP" O R 8760 1560 39 
+F8 "+O" O R 8760 1660 39 
+F9 "-O" O R 8760 1765 39 
+$EndSheet
+$Sheet
+S 7995 2090 765  530 
+U 5B117CFE
+F0 "Amplifier Block 2" 39
+F1 "Amplifier.sch" 39
+F2 "IN-" I L 7995 2570 39 
+F3 "IN+" I L 7995 2470 39 
+F4 "V+" I L 7995 2365 39 
+F5 "V-" I L 7995 2255 39 
+F6 "GND" I L 7995 2150 39 
+F7 "OP" O R 8760 2260 39 
+F8 "+O" O R 8760 2365 39 
+F9 "-O" O R 8760 2480 39 
+$EndSheet
+Wire Wire Line
+	8000 1655 7705 1655
+Wire Wire Line
+	7705 1655 7705 2365
+Wire Wire Line
+	7705 2365 7995 2365
+Wire Wire Line
+	7995 2255 7800 2255
+Wire Wire Line
+	7800 2255 7800 1550
+Wire Wire Line
+	7800 1550 8000 1550
+Wire Wire Line
+	8000 1445 7895 1445
+Wire Wire Line
+	7895 1445 7895 2150
+Wire Wire Line
+	7895 2150 7995 2150
+$Comp
+L Conn_01x05 J?
+U 1 1 5B141288
+P 7280 2040
+F 0 "J?" H 7280 2340 50  0000 C CNN
+F 1 "AmplifierIN" V 7380 2040 50  0000 C CNN
+F 2 "" H 7280 2040 50  0001 C CNN
+F 3 "" H 7280 2040 50  0001 C CNN
+	1    7280 2040
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7480 2240 7510 2240
+Wire Wire Line
+	7510 2240 7510 2570
+Wire Wire Line
+	7510 2570 7995 2570
+Wire Wire Line
+	7995 2470 7610 2470
+Wire Wire Line
+	7610 2470 7610 2140
+Wire Wire Line
+	7610 2140 7480 2140
+Wire Wire Line
+	7480 1840 7535 1840
+Wire Wire Line
+	7535 1840 7535 1760
+Wire Wire Line
+	7535 1760 8000 1760
+Wire Wire Line
+	8000 1860 7620 1860
+Wire Wire Line
+	7620 1860 7620 1940
+Wire Wire Line
+	7620 1940 7480 1940
+Wire Wire Line
+	7480 2040 7895 2040
+Connection ~ 7895 2040
 $EndSCHEMATC
