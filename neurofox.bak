@@ -37,7 +37,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 8
 Title "FOSSASIA - NeuroFox"
 Date "2018-05-31"
 Rev "1"
@@ -136,7 +136,7 @@ Wire Wire Line
 Wire Wire Line
 	2975 1095 2975 2400
 Wire Wire Line
-	2975 1415 1660 1415
+	1660 1415 2975 1415
 Connection ~ 1750 1415
 Wire Wire Line
 	2625 835  3060 835 
@@ -251,4 +251,58 @@ Wire Wire Line
 Wire Wire Line
 	5045 2400 2975 2400
 Connection ~ 2975 1415
+Wire Wire Line
+	2625 1095 2870 1095
+Wire Wire Line
+	2870 1095 2870 2525
+$Sheet
+S 3080 1900 710  345 
+U 5B10D013
+F0 "Clock Block" 39
+F1 "ClockBlock.sch" 39
+F2 "+5V" I L 3080 1965 39 
+F3 "EXCLK" I L 3080 2065 39 
+F4 "GND" I L 3080 2165 39 
+F5 "CLK" O R 3790 2065 39 
+$EndSheet
+Wire Wire Line
+	4150 2065 4150 2525
+Wire Wire Line
+	4150 2525 2870 2525
+Wire Wire Line
+	4250 2065 4150 2065
+Wire Wire Line
+	3990 2065 3990 2160
+Wire Wire Line
+	3990 2160 4250 2160
+Wire Wire Line
+	3790 2065 3990 2065
+Wire Wire Line
+	3080 1965 2870 1965
+Connection ~ 2870 1965
+Wire Wire Line
+	3080 2165 2975 2165
+Connection ~ 2975 2165
+$Sheet
+S 5450 1635 675  430 
+U 5B117A7C
+F0 "RC Filter 2" 39
+F1 "RCFilterBlock2.sch" 39
+F2 "OUT1" I L 5450 1985 39 
+F3 "OUT2" I L 5450 1890 39 
+F4 "OUT3" I L 5450 1800 39 
+F5 "OUT4" I L 5450 1710 39 
+F6 "OUT1'" O R 6125 1985 39 
+F7 "OUT2'" O R 6125 1890 39 
+F8 "OUT3'" O R 6125 1800 39 
+F9 "OUT4'" O R 6125 1710 39 
+$EndSheet
+Wire Wire Line
+	5450 1710 4960 1710
+Wire Wire Line
+	4960 1800 5450 1800
+Wire Wire Line
+	5450 1890 4960 1890
+Wire Wire Line
+	4960 1985 5450 1985
 $EndSCHEMATC
