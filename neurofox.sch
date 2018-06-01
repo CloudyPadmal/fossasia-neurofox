@@ -1,0 +1,260 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:neuro
+LIBS:neurofox-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 6
+Title "FOSSASIA - NeuroFox"
+Date "2018-05-31"
+Rev "1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L +5V #PWR2
+U 1 1 5B0FF3C1
+P 650 1085
+F 0 "#PWR2" H 650 935 50  0001 C CNN
+F 1 "+5V" H 650 1225 50  0000 C CNN
+F 2 "" H 650 1085 50  0001 C CNN
+F 3 "" H 650 1085 50  0001 C CNN
+	1    650  1085
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 870  670  685  585 
+U 5B10060A
+F0 "External Power" 39
+F1 "ExternalPower.sch" 39
+F2 "Ground" I R 1555 1095 39 
+F3 "VIN" O R 1555 835 39 
+F4 "12V" I L 870 840 39 
+F5 "5.5V" I L 870 1095 39 
+$EndSheet
+$Comp
+L GND #PWR3
+U 1 1 5B10240C
+P 1750 1480
+F 0 "#PWR3" H 1750 1230 50  0001 C CNN
+F 1 "GND" H 1750 1330 39  0000 C CNN
+F 2 "" H 1750 1480 50  0001 C CNN
+F 3 "" H 1750 1480 50  0001 C CNN
+	1    1750 1480
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	870  1095 650  1095
+Wire Wire Line
+	650  1085 650  1150
+$Comp
+L +12V #PWR1
+U 1 1 5B0FF328
+P 650 815
+F 0 "#PWR1" H 650 665 50  0001 C CNN
+F 1 "+12V" H 650 955 50  0000 C CNN
+F 2 "" H 650 815 50  0001 C CNN
+F 3 "" H 650 815 50  0001 C CNN
+	1    650  815 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	650  815  650  840 
+Wire Wire Line
+	535  840  870  840 
+$Sheet
+S 1925 670  700  585 
+U 5B103929
+F0 "Power Regulator" 39
+F1 "PowerRegulator.sch" 39
+F2 "VIN" I L 1925 835 39 
+F3 "VCCIO" O R 2625 835 39 
+F4 "5V" O R 2625 1095 39 
+F5 "GND" I L 1925 1095 39 
+$EndSheet
+Wire Wire Line
+	1555 1095 1925 1095
+Wire Wire Line
+	1555 835  1925 835 
+Wire Wire Line
+	1750 1095 1750 1480
+Connection ~ 1750 1095
+$Sheet
+S 3060 670  565  585 
+U 5B108F6C
+F0 "Attenuator" 39
+F1 "Attenuator.sch" 39
+F2 "GND" I L 3060 1095 39 
+F3 "+IN0.4XA" O R 3625 1210 39 
+F4 "-IN0.4XA" O R 3625 1140 39 
+F5 "+IN0.4XB" O R 3625 1070 39 
+F6 "VCCIO" I L 3060 835 39 
+F7 "+OUTB" O R 3625 785 39 
+F8 "+OUTA" O R 3625 915 39 
+F9 "-OUTA" O R 3625 850 39 
+F10 "-OUTB" O R 3625 710 39 
+F11 "-IN0.4XB" O R 3625 1000 39 
+$EndSheet
+Wire Wire Line
+	3060 1095 2975 1095
+Wire Wire Line
+	2975 1095 2975 2400
+Wire Wire Line
+	2975 1415 1660 1415
+Connection ~ 1750 1415
+Wire Wire Line
+	2625 835  3060 835 
+$Comp
+L PWR_FLAG #FLG3
+U 1 1 5B10FC79
+P 1660 1415
+F 0 "#FLG3" H 1660 1490 50  0001 C CNN
+F 1 "PWR_FLAG" V 1655 1670 39  0000 C CNN
+F 2 "" H 1660 1415 50  0001 C CNN
+F 3 "" H 1660 1415 50  0001 C CNN
+	1    1660 1415
+	0    -1   -1   0   
+$EndComp
+$Comp
+L PWR_FLAG #FLG2
+U 1 1 5B110CF5
+P 650 1150
+F 0 "#FLG2" H 650 1225 50  0001 C CNN
+F 1 "PWR_FLAG" V 645 1405 39  0000 C CNN
+F 2 "" H 650 1150 50  0001 C CNN
+F 3 "" H 650 1150 50  0001 C CNN
+	1    650  1150
+	-1   0    0    1   
+$EndComp
+$Comp
+L PWR_FLAG #FLG1
+U 1 1 5B111031
+P 535 1150
+F 0 "#FLG1" H 535 1225 50  0001 C CNN
+F 1 "PWR_FLAG" V 530 1405 39  0000 C CNN
+F 2 "" H 535 1150 50  0001 C CNN
+F 3 "" H 535 1150 50  0001 C CNN
+	1    535  1150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	535  1150 535  840 
+Connection ~ 650  840 
+Connection ~ 650  1095
+$Sheet
+S 4210 670  750  585 
+U 5B112CE8
+F0 "RC Filter 1" 39
+F1 "RCFilterBlock1.sch" 39
+F2 "+OUTA'" O R 4960 1150 39 
+F3 "-OUTA'" O R 4960 1020 39 
+F4 "+OUTB'" O R 4960 905 39 
+F5 "-OUTB'" O R 4960 770 39 
+F6 "+OUTA" I L 4210 1150 39 
+F7 "-OUTA" I L 4210 1020 39 
+F8 "+OUTB" I L 4210 905 39 
+F9 "-OUTB" I L 4210 770 39 
+$EndSheet
+Wire Wire Line
+	4210 770  4150 770 
+Wire Wire Line
+	4150 710  4150 1970
+Wire Wire Line
+	4150 710  3625 710 
+Wire Wire Line
+	3625 785  4110 785 
+Wire Wire Line
+	4110 785  4110 1870
+Wire Wire Line
+	4110 905  4210 905 
+Wire Wire Line
+	3625 850  4075 850 
+Wire Wire Line
+	4075 850  4075 1690
+Wire Wire Line
+	4075 1020 4210 1020
+Wire Wire Line
+	3625 915  4035 915 
+Wire Wire Line
+	4035 915  4035 1780
+Wire Wire Line
+	4035 1150 4210 1150
+$Sheet
+S 4250 1635 710  585 
+U 5B10B2AE
+F0 "MAX7480 Block" 39
+F1 "MAX7480Block.sch" 39
+F2 "CLKIN" I L 4250 2160 39 
+F3 "+5V" I L 4250 2065 39 
+F4 "OUT1" O R 4960 1985 39 
+F5 "OUT2" O R 4960 1890 39 
+F6 "OUT3" O R 4960 1800 39 
+F7 "OUT4" O R 4960 1710 39 
+F8 "IN3" I L 4250 1870 39 
+F9 "IN2" I L 4250 1970 39 
+F10 "IN1" I L 4250 1690 39 
+F11 "IN4" I L 4250 1780 39 
+F12 "GND" I R 4960 2125 39 
+$EndSheet
+Wire Wire Line
+	4075 1690 4250 1690
+Connection ~ 4075 1020
+Wire Wire Line
+	4035 1780 4250 1780
+Connection ~ 4035 1150
+Wire Wire Line
+	4110 1870 4250 1870
+Connection ~ 4110 905 
+Wire Wire Line
+	4150 1970 4250 1970
+Connection ~ 4150 770 
+Wire Wire Line
+	4960 2125 5045 2125
+Wire Wire Line
+	5045 2125 5045 2400
+Wire Wire Line
+	5045 2400 2975 2400
+Connection ~ 2975 1415
+Wire Wire Line
+	2625 1095 2870 1095
+Wire Wire Line
+	2870 1095 2870 2065
+Wire Wire Line
+	2870 2065 4250 2065
+$EndSCHEMATC
