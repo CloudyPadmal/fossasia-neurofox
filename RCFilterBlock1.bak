@@ -38,9 +38,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 10
-Title ""
-Date ""
-Rev ""
+Title "FOSSASIA - NeuroFox"
+Date "2018-05-31"
+Rev "1"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -168,7 +168,7 @@ Wire Wire Line
 Wire Wire Line
 	5735 2870 6455 2870
 Wire Wire Line
-	6455 5110 6455 2870
+	6455 2870 6455 5110
 Wire Wire Line
 	6455 3620 5735 3620
 Wire Wire Line
@@ -181,7 +181,7 @@ Connection ~ 6455 3620
 Wire Wire Line
 	5745 4885 5745 5110
 Wire Wire Line
-	4785 5110 6455 5110
+	6455 5110 4785 5110
 Connection ~ 6455 4295
 Text HLabel 4785 2370 0    39   Input ~ 0
 +OUTA

@@ -136,15 +136,15 @@ Wire Wire Line
 	6025 3570 6685 3570
 Wire Wire Line
 	6170 4730 6170 4290
-Text HLabel 6685 4730 2    60   Input ~ 0
-Ground
+Text HLabel 6685 4730 2    39   Input ~ 0
+GND
 Connection ~ 6170 4730
-Text HLabel 6685 3570 2    60   Input ~ 0
+Text HLabel 6685 3570 2    39   Input ~ 0
 VIN
 Connection ~ 6170 3570
-Text HLabel 4665 3025 0    60   Input ~ 0
+Text HLabel 4665 3025 0    39   Input ~ 0
 12V
-Text HLabel 5270 3025 2    60   Input ~ 0
+Text HLabel 5270 3025 2    39   Input ~ 0
 5.5V
 Wire Wire Line
 	5270 3025 5095 3025

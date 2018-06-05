@@ -38,9 +38,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 10
-Title ""
-Date ""
-Rev ""
+Title "FOSSASIA - NeuroFox"
+Date "2018-05-31"
+Rev "1"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -230,9 +230,9 @@ Wire Wire Line
 Wire Wire Line
 	5270 3315 5720 3315
 Wire Wire Line
-	5720 3045 5720 3315
+	5720 3315 5720 3045
 Wire Wire Line
-	3470 3045 5720 3045
+	5720 3045 3470 3045
 Wire Wire Line
 	4225 3045 4225 3215
 Wire Wire Line
@@ -240,9 +240,9 @@ Wire Wire Line
 Wire Wire Line
 	5275 4445 5740 4445
 Wire Wire Line
-	5740 4180 5740 4445
+	5740 4445 5740 4180
 Wire Wire Line
-	3470 4180 5740 4180
+	5740 4180 3470 4180
 Wire Wire Line
 	4225 4180 4225 4345
 Wire Wire Line
@@ -250,9 +250,9 @@ Wire Wire Line
 Wire Wire Line
 	7720 4445 8245 4445
 Wire Wire Line
-	8245 4190 8245 4445
+	8245 4445 8245 4190
 Wire Wire Line
-	6075 4190 8245 4190
+	8245 4190 6075 4190
 Wire Wire Line
 	6660 4190 6660 4345
 Wire Wire Line
@@ -260,9 +260,9 @@ Wire Wire Line
 Wire Wire Line
 	7715 3315 8240 3315
 Wire Wire Line
-	8240 3060 8240 3315
+	8240 3315 8240 3060
 Wire Wire Line
-	6075 3060 8240 3060
+	8240 3060 6075 3060
 Wire Wire Line
 	6660 3060 6660 3215
 Wire Wire Line
